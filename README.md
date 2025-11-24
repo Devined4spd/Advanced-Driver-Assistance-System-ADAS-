@@ -2,25 +2,34 @@ Advanced Driver Assistance System (ADAS)
 
 Lane Detection | Lane Curvature | LDW | YOLO Object Detection | Vehicle Tracking | Steering Angle | Speed Estimation | TTC Prediction
  
-	Overview
+-> Overview
 
 This project implements a complete Advanced Driver Assistance System (ADAS) using Python, OpenCV, and YOLOv8.
 
 It runs in real-time and includes multiple safety-critical features found in modern autonomous vehicles.
 
 The system integrates:
-•	✔ Lane Detection (Canny + Hough)
-•	✔ Lane Curvature Estimation
-•	✔ Lane Departure Warning (LDW)
-•	✔ Steering Angle Prediction
-•	✔ YOLOv8 Object Detection
-•	✔ Vehicle ID Tracking
-•	✔ Speed Estimation
-•	✔ Time-To-Collision (TTC) Prediction
-•	✔ Real-Time Visual Overlay
+
+•	Lane Detection (Canny + Hough)
+
+•	Lane Curvature Estimation
+
+•	Lane Departure Warning (LDW)
+
+•	Steering Angle Prediction
+
+•	YOLOv8 Object Detection
+
+•	Vehicle ID Tracking
+
+•	Speed Estimation
+
+•	Time-To-Collision (TTC) Prediction
+
+•	Real-Time Visual Overlay
  
  
-	Features
+-> Features
 
 1.	Lane Detection
 •	Canny Edge Detection
@@ -63,7 +72,7 @@ A simple centroid-based tracker:
 •	Calculates inverse-height rate of change
 •	TTC displayed per vehicle
  
-	Project Structure
+-> Project Structure
 
 ├── lane_detection.py        # Main ADAS pipeline
 
@@ -75,7 +84,7 @@ A simple centroid-based tracker:
 
 └── requirements.txt         # Dependencies
  
-Installation & Setup
+-> Installation & Setup
 1. Clone the Repository
 git clone https://github.com/YOUR_USERNAME/Advanced-Driver-Assistance-System-(ADAS)-Project.git
 
@@ -90,7 +99,7 @@ venv\Scripts\activate         # Windows
    
 pip install ultralytics opencv-python numpy
  
-	Run the Project
+-> Run the Project
 Using a video file
 python lane_detection.py
 Using webcam
@@ -102,25 +111,25 @@ cap = cv2.VideoCapture("test_video.mp4")
 with:
 cap = cv2.VideoCapture(0)
  
-	Requirements
+->	Requirements
 ultralytics
 opencv-python
 numpy
  
-	Technologies Used
+-> Technologies Used
 •	Python
 •	OpenCV
 •	YOLOv8 (Ultralytics)
 •	NumPy
 •	Custom Tracking Algorithms
  
-	Tested On
+-> Tested On
 •	macOS (VS Code)
 •	Python 3.9+
 •	YOLOv8n model
 •	720p & 1080p driving videos
  
-	Future Enhancements
+-> Future Enhancements
 •	ByteTrack / DeepSORT tracking
 •	Accurate distance estimation (depth)
 •	Bird’s-eye view transformation
@@ -128,7 +137,7 @@ numpy
 •	PyQt dashboard UI
 •	Export processed video with overlays
  
-	Contributing
+-> Contributing
 Pull requests are welcome!
 Feel free to open issues for improvements or bugs.
 
