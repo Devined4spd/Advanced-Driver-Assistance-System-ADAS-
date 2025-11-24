@@ -31,45 +31,59 @@ The system integrates:
  
 -> Features
 
-1.	Lane Detection
+.	Lane Detection
+
 •	Canny Edge Detection
+
 •	Region of Interest Masking
+
 •	Hough Line Transform
+
 •	Separation of left/right lanes
 
-2.	Lane Curvature Calculation
+.	Lane Curvature Calculation
 
-Polynomial fitting + real world scaling (m/pixel).
+. Polynomial fitting + real world scaling (m/pixel).
 
-3.	Lane Departure Warning (LDW)
+. Lane Departure Warning (LDW)
    
 •	Computes vehicle offset from lane center
+
 •	Displays red warning with severity
 
-
-4.	Steering Angle Prediction
+.	Steering Angle Prediction
+   
 •	Predicts turning direction
+
 •	Visual steering line overlaid on screen
 
-5.	YOLOv8 Object Detection
+->	YOLOv8 Object Detection
+
 Detects:
-•	Cars
-•	Bikes
-•	Buses
-•	Trucks
+•	Cars,
+•	Bikes,
+•	Buses,
+•	Trucks,
 •	Motorcycles
 
-6.	Vehicle ID Tracking
+->	Vehicle ID Tracking
+   
 A simple centroid-based tracker:
+
 •	Assigns consistent IDs
+
 •	Tracks vehicles frame-to-frame
 
-7.	Speed Estimation
+->	Speed Estimation
+
 •	Based on frame-to-frame pixel displacement
+
 •	Converts into km/h
 
-8.	Time-To-Collision (TTC) Prediction
+->	Time-To-Collision (TTC) Prediction
+
 •	Calculates inverse-height rate of change
+
 •	TTC displayed per vehicle
  
 -> Project Structure
@@ -85,12 +99,14 @@ A simple centroid-based tracker:
 └── requirements.txt         # Dependencies
  
 -> Installation & Setup
+
 1. Clone the Repository
 git clone https://github.com/Devined4spd/Advanced-Driver-Assistance-System-(ADAS)-Project.git
 
 cd Advanced-Driver-Assistance-System-(ADAS)-Project
 
 2. Create and Activate Virtual Environment
+   
 python3 -m venv venv
 source venv/bin/activate      # macOS / Linux
 venv\Scripts\activate         # Windows
@@ -100,6 +116,7 @@ venv\Scripts\activate         # Windows
 pip install ultralytics opencv-python numpy
  
 -> Run the Project
+
 Using a video file
 python lane_detection.py
 Using webcam
@@ -112,29 +129,47 @@ with:
 cap = cv2.VideoCapture(0)
  
 ->	Requirements
+
 ultralytics
+
 opencv-python
+
 numpy
  
 -> Technologies Used
+
 •	Python
+
 •	OpenCV
+
 •	YOLOv8 (Ultralytics)
+
 •	NumPy
+
 •	Custom Tracking Algorithms
  
 -> Tested On
+
 •	macOS (VS Code)
+
 •	Python 3.9+
+
 •	YOLOv8n model
+
 •	720p & 1080p driving videos
  
 -> Future Enhancements
+
 •	ByteTrack / DeepSORT tracking
+
 •	Accurate distance estimation (depth)
+
 •	Bird’s-eye view transformation
+
 •	Road segmentation using U-Net
+
 •	PyQt dashboard UI
+
 •	Export processed video with overlays
  
 -> Contributing
