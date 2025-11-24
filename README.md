@@ -86,7 +86,7 @@ A simple centroid-based tracker:
  
 -> Installation & Setup
 1. Clone the Repository
-git clone https://github.com/YOUR_USERNAME/Advanced-Driver-Assistance-System-(ADAS)-Project.git
+git clone https://github.com/Devined4spd/Advanced-Driver-Assistance-System-(ADAS)-Project.git
 
 cd Advanced-Driver-Assistance-System-(ADAS)-Project
 
